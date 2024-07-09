@@ -1,0 +1,37 @@
+# Here we important the AD module so we can run AD cmdlets.
+Import-Module activedirectory
+
+#Store the data from your CSV file in the $ADUsers variable
+$ADUsers = Import-csv C:\BulkUsers.csv
+
+#Assign each row of input data and assign to variables
+such as: ($User in $ADUsers)
+{
+$Username = $User.name
+$Password = $User.password
+$Firstname = $User.firstname
+$Lastname = $User.lastname
+$OU = $User.OU
+$email = $User.email
+$streetaddress = $User.address
+$city = $User.city
+$state = $User.state
+$country = $User.country
+$zipcode = $User.zipcode
+$telephone = $User.telephone
+$jobtitle = $User.title
+$company = $User.company
+$department = $User.department
+
+#Check to see if user exists already
+if (Get-ADUser -F {SamAccountName -eq $Username})
+{
+#If the user already exists, display a warning 
+Write-Warning "A user account with username $Username already exists in Active Directory."
+}
+else
+{
+#Otherwise, create the new user account in the specified OU
+New-ADUser  SamAccountName $Username  UserPrincipalName "$Username@milkyway.local"  Name “$Firstname $Lastname”  GivenName $Firstname  Surname $Lastname  Enabled $True  DisplayName "$Lastname, $Firstname"  Path $OU  City $city  Company $company  State $state  StreetAddress $streetaddress  OfficePhone $telephone  EmailAddress $email  Title $jobtitle  Department $department  AccountPassword (convertto-securestring $Password -AsPlainText  Force)  ChangePasswordAtLogon $True
+}
+}
