@@ -4,6 +4,7 @@
 
 
   - [Active Directory Home Lab](https://github.com/BrettGooding/laburl)
+  - [Active Directory bulk user add](https://github.com/BrettGooding/Active-Directory-Bulk-Add-PowerShell-)
 
 
 <h2>📺 Certifications:</h2>
