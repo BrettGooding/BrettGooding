@@ -10,7 +10,12 @@
 
 - [ITIL Foundations](https://www.axelos.com/)
 - [CompTIA ITF+](https://www.comptia.org/)
-
+- [CompTIA A+](https://www.comptia.org/)
+- [CompTIA Network+](https://www.comptia.org/)
+- [CompTIA Security+](https://www.comptia.org/)
+- [CompTIA Project+](https://www.comptia.org/)
+- [Amazon Web Services(AWS) Certified Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)
+- [Linux Professional Institute(LPI) Linux Essentials](https://lpi.org)
 
 <h2> 🤳 Connect with me:</h2>
 
