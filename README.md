@@ -5,6 +5,7 @@
 
   - [Active Directory Home Lab](https://github.com/BrettGooding/laburl)
   - [Active Directory bulk user add](https://github.com/BrettGooding/Active-Directory-Bulk-Add-PowerShell-)
+  - [Automating Jwipe on devices drives](https://github.com/BrettGooding/JWipeAutomation)
 
 
 <h2>📺 Certifications:</h2>
